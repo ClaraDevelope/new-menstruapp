@@ -1,0 +1,39 @@
+.background-wrapper {
+  /* background-image: url('/white-pink.webp');
+  background-image: url('/flor-bb.jpg'); */
+  /* background-image: url('/14.jpg'); */
+  background-image: url('/11.jpg');
+  /* background-size: contain ; */
+  background-position: center;
+  width: 100%;
+  min-height: 100%;
+  z-index: 0;
+  position: absolute;
+  /* opacity: 90%; */
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 5rem;
+}
+
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background-color: rgba(255, 255, 255, 0.564); */
+  /* background-color: #c4a0e92c; */
+  background-color: #e3d7f080;
+  z-index: 1;
+}
+
+.background-wrapper > *:not(.background-overlay) {
+  position: relative;
+  z-index: 2;
+}
+.background-content {
+  width: 100%;
+  /* position: relative; */
+}

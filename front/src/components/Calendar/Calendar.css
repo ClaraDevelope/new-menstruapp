@@ -1,0 +1,52 @@
+.responsive-calendar {
+  height: 550px;
+  max-width: 800px;
+  margin: 50px auto;
+}
+.rbc-button-link {
+  pointer-events: none;
+}
+
+@media (min-width: 1024px) {
+  .responsive-calendar {
+    height: 550px;
+    max-width: 1000px;
+  }
+}
+
+@media (max-width: 768px) {
+  .responsive-calendar {
+    height: 400px;
+    max-width: 100%;
+    margin-top: 150px;
+  }
+}
+
+.rbc-calendar {
+  width: 100%;
+}
+.rbc-header {
+  padding: 10px;
+}
+
+.rbc-today {
+  background-color: var(--color-orange);
+}
+.rbc-event {
+  background-color: var(--color-dark-blue);
+}
+.rbc-calendar {
+  background-color: var(--color-white);
+  padding: 20px;
+}
+.rbc-row-bg {
+  cursor: pointer;
+}
+.rbc-event.rbc-event-allday.rbc-event-continues-after {
+  background-color: var(--color-green);
+  padding: 4px;
+}
+.rbc-event.rbc-event-allday.rbc-event-continues-prior {
+  background-color: var(--color-green);
+  padding: 4px;
+}
